@@ -1,0 +1,275 @@
+2022-11-26 20:26:09,981::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 20:26:34,979::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 20:26:47,511::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 20:29:51,854::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 20:30:03,355::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 21:05:51,543::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:05:54,531::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 21:06:12,458::ERROR::call-billing::app.py::1741::Exception on /mobile/binhlam/call [PUT]
+Traceback (most recent call last):
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/lap-01122/call-billing/app/controller.py", line 58, in put
+    _logger.info("[INFO] Record call with info: %s" % req_data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2022-11-26 21:06:27,408::ERROR::call-billing::app.py::1741::Exception on /mobile/binhlam/call [PUT]
+Traceback (most recent call last):
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/lap-01122/call-billing/app/controller.py", line 58, in put
+    _logger.info("[INFO] Record call with info: %s" % req_data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2022-11-26 21:06:37,059::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:06:38,916::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 21:07:10,356::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:07:13,045::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 21:07:53,264::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:07:54,223::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 21:09:16,309::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:10:13,052::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:15:25,145::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 21:16:00,297::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:10:06,228::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:10:37,567::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:10:38,365::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:11:23,373::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:11:24,108::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:11:33,313::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:11:34,099::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:12:55,543::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:14:30,740::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:14:31,433::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:15:15,056::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:15:15,738::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:15:57,482::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:15:58,421::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:16:15,504::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:16:16,235::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:16:51,436::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:16:52,317::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:16:54,543::INFO::call-billing::controller.py::54::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-26 22:18:08,152::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:18:09,027::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:18:11,389::INFO::call-billing::controller.py::54::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-26 22:18:27,289::ERROR::call-billing::calling.py::29::[CallingRepository] record error: 'ThreadedConnectionPool' object has no attribute 'acquire'
+2022-11-26 22:21:07,492::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:21:08,222::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:21:11,131::INFO::call-billing::controller.py::54::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-26 22:32:39,212::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-26 22:32:40,015::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=10.20.43.10, db=tiki_erp_uat, port=5432, max_conn=64
+2022-11-26 22:32:44,666::INFO::call-billing::controller.py::54::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 00:13:22,136::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:14:44,454::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:15:11,878::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:15:54,456::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432, max_conn=64
+2022-11-27 00:16:08,289::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:16:35,284::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432, max_conn=64
+2022-11-27 00:17:33,889::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:18:00,431::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432, max_conn=64
+2022-11-27 00:19:45,808::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 00:20:33,131::ERROR::call-billing::calling.py::34::[CallingRepository] record error: 'builtin_function_or_method' object has no attribute 'execute'
+2022-11-27 00:20:57,829::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 00:21:53,817::ERROR::call-billing::calling.py::34::[CallingRepository] record error: 'builtin_function_or_method' object has no attribute 'execute'
+2022-11-27 00:22:51,083::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:23:18,442::INFO::call-billing::database.py::39::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432, max_conn=64
+2022-11-27 00:23:28,997::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 00:24:21,728::ERROR::call-billing::calling.py::35::[CallingRepository] record error: function takes at most 2 arguments (4 given)
+2022-11-27 00:27:32,969::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:27:32,969::INFO::call-billing::database.py::30::[DB] Connecting to DB, it may take a while....
+2022-11-27 00:27:59,373::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 00:29:25,602::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 00:29:42,004::ERROR::call-billing::calling.py::36::[CallingRepository] record error: syntax error at or near "INSER"
+LINE 2:             INSER INTO call_billing (
+                    ^
+
+2022-11-27 00:30:21,144::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 00:30:21,145::INFO::call-billing::database.py::30::[DB] Connecting to DB, it may take a while....
+2022-11-27 00:30:48,053::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 00:30:52,980::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 00:31:03,766::ERROR::call-billing::calling.py::36::[CallingRepository] record error: there is no parameter $1
+LINE 8:                 $1,
+                        ^
+
+2022-11-27 08:43:02,321::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 08:43:02,322::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while....
+2022-11-27 08:43:51,009::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 08:48:46,091::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 08:48:46,092::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while....
+2022-11-27 08:49:29,254::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 08:58:45,849::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 08:58:45,850::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 08:59:39,207::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:00:52,675::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:00:52,676::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:01:43,936::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:02:05,687::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 09:02:05,843::ERROR::call-billing::app.py::1741::Exception on /mobile/binhlam/call [PUT]
+Traceback (most recent call last):
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/Users/lap-01122/virtualenv/callbillingenv/lib/python3.9/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/lap-01122/call-billing/app/controller.py", line 72, in put
+    is_success = CallingService.record(req_data)
+TypeError: record() missing 1 required positional argument: 'data'
+2022-11-27 09:02:39,648::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:02:39,649::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:03:43,042::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:03:49,321::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 09:04:19,467::ERROR::call-billing::calling.py::39::[CallingRepository] Record error: column reference "call_count" is ambiguous
+LINE 16:                 call_count = call_count + 1,
+                                      ^
+
+2022-11-27 09:10:38,263::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:10:38,263::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:11:21,250::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:11:30,144::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 09:11:38,583::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 09:12:02,896::INFO::call-billing::controller.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 09:12:06,877::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 09:14:15,568::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:14:15,569::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:15:11,264::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:16:31,880::INFO::call-billing::controller.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 09:17:38,668::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:17:38,669::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:18:30,704::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:19:17,425::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:19:17,426::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:20:16,067::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:20:16,340::INFO::call-billing::controller.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 09:20:35,175::ERROR::call-billing::billing.py::26::[BillingRepository] fetch error: not all arguments converted during string formatting
+2022-11-27 09:20:49,543::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:20:49,543::INFO::call-billing::database.py::30::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:21:41,539::INFO::call-billing::database.py::40::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:21:51,632::INFO::call-billing::controller.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 09:21:57,766::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 09:22:38,472::INFO::call-billing::controller.py::96::[INFO] Billing the call of user: binhlam1
+2022-11-27 09:22:42,302::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam1
+2022-11-27 09:26:28,192::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 09:26:28,192::INFO::call-billing::database.py::42::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 09:27:21,679::INFO::call-billing::database.py::52::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 09:27:33,380::INFO::call-billing::controller.py::96::[INFO] Billing the call of user: binhlam1
+2022-11-27 09:27:34,387::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam1
+2022-11-27 09:27:41,225::INFO::call-billing::controller.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 09:27:41,986::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 10:46:44,888::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 10:46:44,890::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 11:03:14,198::ERROR::call-billing::database.py::41::[DB] Fail connecting to db with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432 - ERROR: connection to server at "ec2-3-211-6-217.compute-1.amazonaws.com" (3.211.6.217), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+SSL SYSCALL error: Connection reset by peer
+connection to server at "ec2-3-211-6-217.compute-1.amazonaws.com" (3.211.6.217), port 5432 failed: FATAL:  no pg_hba.conf entry for host "113.161.39.115", user "kebeokwxwpjyeo", database "d5u0mpig7oejaj", no encryption
+
+2022-11-27 12:02:28,515::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 12:02:28,518::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 12:02:28,521::ERROR::call-billing::database.py::41::[DB] Fail connecting to db with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432 - ERROR: could not translate host name "ec2-3-211-6-217.compute-1.amazonaws.com" to address: nodename nor servname provided, or not known
+
+2022-11-27 12:52:29,538::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 12:52:29,539::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 12:52:58,740::INFO::call-billing::database.py::38::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 13:13:26,775::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 13:13:26,775::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 13:13:54,801::INFO::call-billing::database.py::38::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 13:26:01,315::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 13:26:02,135::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 13:35:15,306::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:35:16,037::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:35:45,998::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:35:46,904::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:47:38,246::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:47:38,985::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:49:19,720::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 13:49:20,676::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 13:49:20,693::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:49:21,700::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:54:02,479::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: admin
+2022-11-27 13:54:03,331::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: admin
+2022-11-27 13:54:03,343::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 13:54:04,215::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 13:54:04,232::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'admin', 'call_duration': 3000}
+2022-11-27 13:54:05,147::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: admin
+2022-11-27 13:54:05,162::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:54:05,959::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:56:53,387::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: admin
+2022-11-27 13:56:54,159::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: admin
+2022-11-27 13:56:54,177::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 13:56:55,034::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 13:56:55,046::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'admin', 'call_duration': 3000}
+2022-11-27 13:56:55,969::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: admin
+2022-11-27 13:56:55,983::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:56:56,760::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:57:33,986::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 13:57:34,822::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 13:57:34,847::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:57:35,587::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 13:58:51,490::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam123
+2022-11-27 13:58:52,372::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam123
+2022-11-27 13:58:52,388::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 13:58:53,291::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 13:58:53,333::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 13:58:54,215::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:00:08,746::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:00:09,688::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:01:19,482::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: bd4b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e
+2022-11-27 14:01:19,492::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 14:01:20,374::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 14:01:20,390::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'bd4b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e', 'call_duration': 3000}
+2022-11-27 14:01:20,407::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:01:21,135::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:29:48,392::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 14:29:48,393::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 14:30:14,148::INFO::call-billing::database.py::38::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 14:31:05,568::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:31:06,531::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:32:59,181::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e
+2022-11-27 14:32:59,191::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 14:32:59,963::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 14:32:59,977::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e', 'call_duration': 3000}
+2022-11-27 14:32:59,995::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:33:00,846::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:33:36,864::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e
+2022-11-27 14:33:36,874::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 14:33:37,710::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 14:33:37,721::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e', 'call_duration': 3000}
+2022-11-27 14:33:37,738::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:33:38,494::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:41:52,612::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 14:41:52,612::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 14:42:19,213::INFO::call-billing::database.py::38::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 14:47:19,941::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e
+2022-11-27 14:47:20,024::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 14:47:20,989::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 14:47:21,007::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e', 'call_duration': 3000}
+2022-11-27 14:47:21,024::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:47:21,847::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:47:41,170::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:47:42,023::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 14:48:03,816::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e
+2022-11-27 14:48:03,828::INFO::call-billing::controllers.py::96::[INFO] Billing the call of user: binhlam
+2022-11-27 14:48:04,612::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 14:48:04,624::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e', 'call_duration': 3000}
+2022-11-27 14:48:04,647::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 14:48:05,534::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
