@@ -21,7 +21,7 @@
 2. Run the server-side with Docker:
    ```sh
     cd call-billing
-    docker build . -t call-billing:latest
+    docker build . --no-cache -t call-billing:latest
     ```
     * API RUN:
     ```

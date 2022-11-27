@@ -273,3 +273,13 @@ connection to server at "ec2-3-211-6-217.compute-1.amazonaws.com" (3.211.6.217),
 2022-11-27 14:48:04,624::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'bc2b9fe601be36d31dbc9052633647e3313da5c8faef4847a3f82af07e8e5f4e', 'call_duration': 3000}
 2022-11-27 14:48:04,647::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
 2022-11-27 14:48:05,534::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 16:11:36,009::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:11:46,061::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:12:41,537::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:13:06,906::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:13:09,723::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 16:13:09,727::ERROR::call-billing::database.py::41::[DB] Fail connecting to db with info: host=localhost, db=call_billing, port=5432 - ERROR: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
