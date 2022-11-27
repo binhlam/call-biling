@@ -25,7 +25,7 @@ class ConnectionPool(metaclass=Singleton):
     def init_pool(self, config):
         global _pool
         try:
-            _logger.info("[DB] Connecting to DB, this may take a while due to latency issue....")
+            _logger.info("[DB] Connecting to DB, this may take around 30s due to latency issue....")
             _pool = ThreadedConnectionPool(
                 config.DB_MINCONN,
                 config.DB_MAXCONN,
