@@ -283,3 +283,16 @@ connection to server at "ec2-3-211-6-217.compute-1.amazonaws.com" (3.211.6.217),
 connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
 	Is the server running on that host and accepting TCP/IP connections?
 
+2022-11-27 16:34:09,907::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:34:09,908::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 16:34:39,027::INFO::call-billing::database.py::38::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 16:34:48,944::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 16:35:46,309::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam
+2022-11-27 16:39:40,375::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:39:40,375::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 16:42:29,708::INFO::call-billing::configuration.py::55::[LOGGER] Successfully init logger.
+2022-11-27 16:42:29,709::INFO::call-billing::database.py::28::[DB] Connecting to DB, this may take a while due to latency issue....
+2022-11-27 16:42:58,282::INFO::call-billing::database.py::38::[DB] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+2022-11-27 16:43:04,062::INFO::call-billing::controllers.py::64::[INFO] Record call with info: {'user_name': 'binhlam', 'call_duration': 3000}
+2022-11-27 16:43:04,882::INFO::call-billing::billing.py::25::[BillingRepository] fetch success with user: binhlam
+2022-11-27 16:43:22,661::INFO::call-billing::calling.py::36::[CallingRepository] Record success with user: binhlam

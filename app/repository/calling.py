@@ -22,15 +22,15 @@ class CallingRepository:
             )
             ON CONFLICT (user_name)
             DO UPDATE SET
-                call_count = excluded.call_count + 1,
-                block_count = excluded.block_count + %s,
+                call_count = %s,
+                block_count = %s,
                 updated_at = now()
         """
         is_error = False
         try:
             with _pool.getconn() as conn:
                 conn.cursor().execute(upsert_sql, (
-                    data.user_name, data.block_count, data.block_count,))
+                    data.user_name, data.block_count, data.call_count, data.block_count, ))
                 conn.commit()
 
             _logger.info("[CallingRepository] Record success with user: %s" % data.user_name)
