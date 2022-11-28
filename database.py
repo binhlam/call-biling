@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
-from psycopg2.pool import ThreadedConnectionPool
 import logging
+from psycopg2.pool import ThreadedConnectionPool
 
 _logger = logging.getLogger('call-billing')
 _pool = None

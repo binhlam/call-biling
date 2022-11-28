@@ -40,6 +40,7 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 ENV PYTHONUNBUFFERED 1
+ENV FLASK_ENV production
 ENV DB_HOST ec2-3-211-6-217.compute-1.amazonaws.com
 ENV DB_NAME d5u0mpig7oejaj
 ENV DB_USER kebeokwxwpjyeo

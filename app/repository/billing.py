@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
+import logging
 import psycopg2, psycopg2.extras
 from database import _pool
-from configuration import _logger
+
+_logger = logging.getLogger('call-billing')
 
 
 class BillingRepository:

@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
+import logging
 from database import _pool
-from configuration import _logger
+
+_logger = logging.getLogger('call-billing')
 
 
 class CallingRepository:
-
     @classmethod
     def record(cls, data):
         upsert_sql = """
@@ -29,7 +30,8 @@ class CallingRepository:
         is_error = False
         try:
             with _pool.getconn() as conn:
-                conn.cursor().execute(upsert_sql, (
+                cr = conn.cursor()
+                cr.execute(upsert_sql, (
                     data.user_name, data.block_count, data.call_count, data.block_count, ))
                 conn.commit()
 
@@ -39,6 +41,7 @@ class CallingRepository:
             _logger.error("[CallingRepository] Record error: %s" % str(e))
             conn.rollback()
         finally:
+            cr.close()
             _pool.putconn(conn)
 
         if is_error:

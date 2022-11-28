@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-from database import ConnectionPool
 from configuration import ConfigManager
+from database import ConnectionPool
 
 
 def run():
-    # init config, logger
+    # init config
     config = ConfigManager()
-    config.init_logger()
+    logger = config.init_logger()
+    logger.info('Loger initialized')
 
     # init connection pool
     connection_pool = ConnectionPool()

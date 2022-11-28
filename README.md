@@ -27,13 +27,13 @@
     ```
         docker run -p 8000:8001 call-billing
     ```
-   ![img.png](img.png)   
+   ![img.png](pkg/static/img.png)   
 
 3. Run unittest (local) - after starting app:
    ```sh
       python3 test/call_billing.py
    ```
-   ![img_1.png](img_1.png)
+   ![img_1.png](pkg/static/img_1.png)
 
 4. Sample curl:
    ```sh
@@ -43,11 +43,11 @@
           "call_duration": 6000
         }'
    ```
-   ![img_2.png](img_2.png)
+   ![img_2.png](pkg/static/img_2.png)
 
    ```sh
    curl --location --request GET 'http://localhost:8000/mobile/tester/billing'
    ```
-   ![img_3.png](img_3.png)
+   ![img_3.png](pkg/static/img_3.png)
 
    

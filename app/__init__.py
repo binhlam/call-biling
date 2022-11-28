@@ -1,20 +1,29 @@
 # -*- coding: utf-8 -*-
-#!flask/bin/python
-from flask import Flask
+from flask import Flask, Blueprint
 from flask_httpauth import HTTPBasicAuth
-from app.controllers import api, api_bp, Calling, Billing
+from flask_restful import Api
+from .api.billing import BillingRequest
+from .api.calling import CallingRequest
+
+# Api blueprint
+api_bp = Blueprint('api', __name__)
+api = Api(api_bp)
+
+
+def register_services(app):
+    # Define endpoints
+    api.add_resource(CallingRequest, '/<user_name>/call')
+    api.add_resource(BillingRequest, '/<user_name>/billing')
+
+    # # Register blueprints
+    app.register_blueprint(api_bp, url_prefix='/mobile')
 
 
 def init_app():
     app = Flask("call-billing", static_url_path="")
     auth = HTTPBasicAuth()
 
-    # Define endpoints
-    api.add_resource(Calling, '/<user_name>/call')
-    api.add_resource(Billing, '/<user_name>/billing')
-
-    # # Register blueprints
-    app.register_blueprint(api_bp, url_prefix='/mobile')
+    register_services(app)
 
     return app
 

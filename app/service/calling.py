@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+import logging
 from app.domain.model import CallBillingModel
 from app.repository.calling import CallingRepository
 from app.repository.billing import BillingRepository
 import math
 
+_logger = logging.getLogger('call-billing')
 BLOCK_DURATION = 30
 
 
@@ -42,3 +44,4 @@ class CallingService:
             'block_count': block_count,
         })
         return CallingRepository.record(calling)
+        pass
