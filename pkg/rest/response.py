@@ -14,7 +14,7 @@ SUCCESS_SCHEMA = {
 
 
 def response_error(err=None):
-    err_resp = ERROR_SCHEMA
+    err_resp = ERROR_SCHEMA.copy()
     if not err:
         return err_resp
 
@@ -23,7 +23,7 @@ def response_error(err=None):
 
 
 def response_success(data=None):
-    success_resp = SUCCESS_SCHEMA
+    success_resp = SUCCESS_SCHEMA.copy()
     if data is None:
         return success_resp
 

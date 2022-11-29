@@ -6,7 +6,7 @@ import os
 base_path = os.path.dirname(__file__)
 app_api_path = '{}/{}'.format(base_path, 'call-billing/app/__init__.py')
 FLASK_APP = os.environ.get('FLASK_APP', app_api_path)
-FLASK_ENV = os.environ.get('FLASK_ENV', __DEFAULT__['FLASK_ENV'])
+FLASK_DEBUG = os.environ.get('FLASK_DEBUG', __DEFAULT__['FLASK_DEBUG'])
 DB_HOST = os.environ.get('DB_HOST', __DEFAULT__['DB_HOST'])
 DB_NAME = os.environ.get('DB_NAME', __DEFAULT__['DB_NAME'])
 DB_USER = os.environ.get('DB_USER', __DEFAULT__['DB_USER'])
@@ -18,7 +18,7 @@ DB_MAXCONN = int(os.environ.get('DB_MAXCONN', __DEFAULT__['DB_MAXCONN']))
 # SET ENV VAR FOR LATER ACCESS
 __ENV_VARIABLES__ = {
     'FLASK_APP': FLASK_APP,
-    'FLASK_ENV': FLASK_ENV,
+    'FLASK_DEBUG': FLASK_DEBUG,
     'DB_HOST': DB_HOST,
     'DB_NAME': DB_NAME,
     'DB_PASSWORD': DB_PASSWORD,

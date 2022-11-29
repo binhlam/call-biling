@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 __DEFAULT__ = {
-    'FLASK_ENV': 'development',
+    'FLASK_DEBUG': 1,
     'DB_HOST': 'ec2-3-211-6-217.compute-1.amazonaws.com',
     'DB_NAME': 'd5u0mpig7oejaj',
     'DB_USER': 'kebeokwxwpjyeo',

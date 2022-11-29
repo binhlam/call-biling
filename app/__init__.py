@@ -2,6 +2,7 @@
 from flask import Flask, Blueprint
 from flask_httpauth import HTTPBasicAuth
 from flask_restful import Api
+from flask_cors import CORS
 from .api.billing import BillingRequest
 from .api.calling import CallingRequest
 
@@ -21,8 +22,9 @@ def register_services(app):
 
 def init_app():
     app = Flask("call-billing", static_url_path="")
-    auth = HTTPBasicAuth()
+    CORS(app, resources={r"/mobile/*": {"origins": "*"}})
 
+    auth = HTTPBasicAuth()
     register_services(app)
 
     return app

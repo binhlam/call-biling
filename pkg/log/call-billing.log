@@ -460,3 +460,47 @@ ValueError: dictionary update sequence element #0 has length 1; 2 is required
 [2022-11-29 12:54:40,573] [INFO] [calling] [CallingService] record success with user: tester1234
 [2022-11-29 12:54:49,012] [INFO] [billing] GET request - payload: {'user_name': 'tester1234'}
 [2022-11-29 12:54:49,823] [INFO] [billing] [BillingRepository] fetch success with user: tester1234
+[2022-11-29 14:41:50,844] [INFO] [main] Logger initialized
+[2022-11-29 14:41:50,846] [INFO] [database] Connecting to DB, this may take around 30s due to latency issue....
+[2022-11-29 14:41:50,849] [ERROR] [database] Failed connecting to db with info: host=localhost, db=call_billing, port=5432 - ERROR: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2022-11-29 16:20:42,906] [INFO] [main] Logger initialized
+[2022-11-29 16:20:42,907] [INFO] [database] Connecting to DB, this may take around 30s due to latency issue....
+[2022-11-29 16:21:09,215] [INFO] [database] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+[2022-11-29 16:21:21,957] [INFO] [billing] GET request - payload: {'user_name': 'tester1234'}
+[2022-11-29 16:21:22,837] [INFO] [billing] [BillingRepository] fetch success with user: tester1234
+[2022-11-29 16:21:32,380] [INFO] [calling] [CALLING] put request - payload: {'user_name': 'tester1234', 'call_duration': 30000}
+[2022-11-29 16:21:32,893] [INFO] [calling] [CallingService] lock success with user: tester1234
+[2022-11-29 16:21:33,139] [INFO] [calling] [CallingService] record success with user: tester1234
+[2022-11-29 16:21:43,873] [INFO] [billing] GET request - payload: {'user_name': 'tester1234'}
+[2022-11-29 16:21:44,620] [INFO] [billing] [BillingRepository] fetch success with user: tester1234
+[2022-11-29 16:22:37,511] [INFO] [calling] [CALLING] put request - payload: {'user_name': 'tester1234', 'call_duration': 30000}
+[2022-11-29 16:22:38,024] [INFO] [calling] [CallingService] lock success with user: tester1234
+[2022-11-29 16:22:38,303] [INFO] [calling] [CallingService] record success with user: tester1234
+[2022-11-29 16:23:14,843] [INFO] [calling] [CALLING] put request - payload: {'user_name': 'tester1234', 'call_duration': 30000}
+[2022-11-29 16:23:15,347] [INFO] [calling] [CallingService] lock success with user: tester1234
+[2022-11-29 16:23:15,595] [INFO] [calling] [CallingService] record success with user: tester1234
+[2022-11-29 16:24:27,254] [INFO] [main] Logger initialized
+[2022-11-29 16:24:27,255] [INFO] [database] Connecting to DB, this may take around 30s due to latency issue....
+[2022-11-29 16:24:56,249] [INFO] [database] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+[2022-11-29 16:25:04,399] [INFO] [calling] [CALLING] put request - payload: {'user_name': 'tester1234', 'call_duration': 30000}
+[2022-11-29 16:25:05,019] [INFO] [calling] [CallingService] lock success with user: tester1234
+[2022-11-29 16:25:05,273] [INFO] [calling] [CallingService] record success with user: tester1234
+[2022-11-29 16:25:17,407] [INFO] [billing] GET request - payload: {'user_name': 'tester1234'}
+[2022-11-29 16:25:18,204] [INFO] [billing] [BillingRepository] fetch success with user: tester1234
+[2022-11-29 16:25:21,651] [INFO] [calling] [CALLING] put request - payload: {'user_name': 'tester1234', 'call_duration': 30000}
+[2022-11-29 16:25:22,224] [INFO] [calling] [CallingService] lock success with user: tester1234
+[2022-11-29 16:25:22,516] [INFO] [calling] [CallingService] record success with user: tester1234
+[2022-11-29 16:25:26,693] [INFO] [billing] GET request - payload: {'user_name': 'tester1234'}
+[2022-11-29 16:25:27,463] [INFO] [billing] [BillingRepository] fetch success with user: tester1234
+[2022-11-29 16:25:54,301] [INFO] [main] Logger initialized
+[2022-11-29 16:25:54,301] [INFO] [database] Connecting to DB, this may take around 30s due to latency issue....
+[2022-11-29 16:26:22,192] [INFO] [database] Successfully init connection pool with info: host=ec2-3-211-6-217.compute-1.amazonaws.com, db=d5u0mpig7oejaj, port=5432
+[2022-11-29 16:26:33,653] [INFO] [calling] [CALLING] put request - payload: {'user_name': 'tester1234', 'call_duration': 30000}
+[2022-11-29 16:26:34,226] [INFO] [calling] [CallingService] lock success with user: tester1234
+[2022-11-29 16:26:34,477] [INFO] [calling] [CallingService] record success with user: tester1234
+[2022-11-29 16:26:38,062] [INFO] [billing] GET request - payload: {'user_name': 'tester1234'}
+[2022-11-29 16:26:38,861] [INFO] [billing] [BillingRepository] fetch success with user: tester1234
