@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
-from psycopg2.pool import ThreadedConnectionPool
 import logging
+from psycopg2.pool import ThreadedConnectionPool
 
 _logger = logging.getLogger('call-billing')
 _pool = None
@@ -25,7 +25,7 @@ class ConnectionPool(metaclass=Singleton):
     def init_pool(self, config):
         global _pool
         try:
-            _logger.info("[DB] Connecting to DB, this may take around 30s due to latency issue....")
+            _logger.info("Connecting to DB, this may take around 30s due to latency issue....")
             _pool = ThreadedConnectionPool(
                 config.DB_MINCONN,
                 config.DB_MAXCONN,
@@ -35,9 +35,9 @@ class ConnectionPool(metaclass=Singleton):
                 host=config.DB_HOST,
                 port=config.DB_PORT
             )
-            _logger.info("[DB] Successfully init connection pool with info: host=%s, db=%s, port=%s"
+            _logger.info("Successfully init connection pool with info: host=%s, db=%s, port=%s"
                          % (config.DB_HOST, config.DB_NAME, config.DB_PORT))
         except Exception as e:
-            _logger.error("[DB] Fail connecting to db with info: host=%s, db=%s, port=%s - ERROR: %s" %
+            _logger.error("Failed connecting to db with info: host=%s, db=%s, port=%s - ERROR: %s" %
                           (config.DB_HOST, config.DB_NAME, config.DB_PORT, str(e)))
             return False

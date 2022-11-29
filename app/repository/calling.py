@@ -1,12 +1,30 @@
 # -*- coding: utf-8 -*-
-from database import _pool
-from configuration import _logger
+import logging
+
+_logger = logging.getLogger('call-billing')
 
 
-class CallingRepository:
+class CallingRepository(object):
+    def __init__(self, cr=None):
+        self.cr = cr
 
-    @classmethod
-    def record(cls, data):
+    def lock(self, user_name):
+        lock_sql = """
+            SELECT call_count, block_count
+            FROM call_billing
+            WHERE user_name=%s
+            FOR UPDATE;
+        """
+        data = None
+        try:
+            self.cr.execute(lock_sql, (user_name,))
+            data = self.cr.fetchone()
+        except Exception as e:
+            _logger.error("[CallingRepository] lock error: %s" % str(e))
+
+        return data
+
+    def save(self, data):
         upsert_sql = """
             INSERT INTO call_billing (
                 user_name,
@@ -26,22 +44,11 @@ class CallingRepository:
                 block_count = %s,
                 updated_at = now()
         """
-        is_error = False
         try:
-            with _pool.getconn() as conn:
-                conn.cursor().execute(upsert_sql, (
-                    data.user_name, data.block_count, data.call_count, data.block_count, ))
-                conn.commit()
-
-            _logger.info("[CallingRepository] Record success with user: %s" % data.user_name)
+            self.cr.execute(upsert_sql, (
+                data.user_name, data.block_count, data.call_count, data.block_count, ))
         except Exception as e:
-            is_error = True
-            _logger.error("[CallingRepository] Record error: %s" % str(e))
-            conn.rollback()
-        finally:
-            _pool.putconn(conn)
-
-        if is_error:
+            _logger.error("[CallingRepository] record error: %s" % str(e))
             return False
 
         return True
