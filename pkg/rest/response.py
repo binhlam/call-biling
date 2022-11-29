@@ -24,7 +24,7 @@ def response_error(err=None):
 
 def response_success(data=None):
     success_resp = SUCCESS_SCHEMA
-    if not data:
+    if data is None:
         return success_resp
 
     success_resp.update(data)

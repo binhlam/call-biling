@@ -2,8 +2,14 @@
 ### Created date: 2022-11-26
 ### Author: *Binh Lam*
 
+# Notes
+- Due to unclear statement about having to manage user data, I assume that we already have user model and its related module management such as: 
+  - user accounts (including create/update user info)
+  - authorization (including manage user token for login and permission on apis)
+- Postgres database is already setup in a free trial instance of heroku, thus it may end ups a bit slow on init connection (at most 30s).
+- Thus, on this assessment, I only focus on the two apis mentioned in the test. If you would like me to work more on the above issues, please inform me.
+
 # Environment Setup
-* Global Dependencies
 1. Run the server-side with Virtualenv:
 
     ```sh

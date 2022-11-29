@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
-import logging
 from flask import jsonify, make_response
 from app.service.calling import CallingService
 from pkg.rest.response import response_error, response_success
 from pkg.rest.response import CODE_OK, CODE_ERR
 from pkg.rest.request import BaseValidation
 from flask_restful import Resource, reqparse
+import logging
 
 _logger = logging.getLogger('call-billing')
 
@@ -30,9 +30,6 @@ CALLING_SCHEMA = {
 class CallingRequest(Resource):
     def __init__(self):
         self.parser = reqparse.RequestParser()
-        self.parser.add_argument('user_name', type=str, required=True,
-                                 help='This field cannot be left blank',
-                                 location='args')
         self.parser.add_argument('call_duration', type=int, required=True,
                                  help='This field cannot be left blank',
                                  location='json')
@@ -48,11 +45,15 @@ class CallingRequest(Resource):
 
         is_valid, err_mess = BaseValidation.validate_schema(req_data, CALLING_SCHEMA)
         if not is_valid:
-            return make_response(jsonify(response_error(err_mess)), CODE_ERR)
+            return make_response(
+                jsonify(response_error(err_mess)), CODE_ERR)
 
-        is_success = CallingService.record(req_data)
+        service = CallingService()
+        is_success = service.record(req_data)
         if not is_success:
             err_mess = "Error on recording user calling."
-            return make_response(jsonify(response_success(err_mess)), CODE_ERR)
+            return make_response(
+                jsonify(response_error(err_mess)), CODE_ERR)
 
-        return make_response(jsonify(response_success()), CODE_OK)
+        return make_response(
+            jsonify(response_success()), CODE_OK)
