@@ -9,7 +9,7 @@
 - Postgres database is already setup in a free trial instance of heroku, thus it may end ups a bit slow on init connection (at most 30s).
 - Thus, on this assessment, I only focus on the two apis mentioned in the test. If you would like me to work more on the above issues, please inform me.
 
-Test one new mac
+Test one new mac 2
 
 # Environment Setup
 1. Run the server-side with Virtualenv:
